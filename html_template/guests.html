@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Guests | IntoParty</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+ <!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">IntoParty API</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">mistr_tester <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="container">
+  <div class="jumbotron">
+    <p class="route"><a href="index.html">Your events</a> / <a href="single_event.html">@Balcony session</a> / Guests</p>   
+    <h1>Event's Guests</h1>
+    <p>List of all users who got in touch with your event</p>      
+  </div>
+
+  <p style="font-style: italic;">Although the UX would be much better, I didn't want to use a fancy JS search tools because the number of guests can be massive.</p> 
+
+  <h2>@Balcony session Guests</h2>
+  <p><strong>Tip:</strong> Use search tools to find a specific guest</p>
+
+  <div class="row mt-20">
+    <div class="col-md-12">
+      <div class="input-group" id="adv-search">
+        <input type="text" class="form-control" placeholder="Search for guests" />
+        <div class="input-group-btn">
+          <div class="btn-group" role="group">
+            <div class="dropdown dropdown-lg">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+              <div class="dropdown-menu dropdown-menu-right" role="menu">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="contain">First Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                  <div class="form-group">
+                    <label for="contain">Last Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                  <div class="form-group">
+                    <label for="contain">E-mail</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </form>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  <table class="mt-20 table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>Products</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Gonza</td>
+        <td>Muches</td>
+        <td>gonzolino@muche.com</td>
+        <td><a href="#">TBA</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Peter</td>
+        <td>Malar</td>
+        <td>papek@cube.com</td>
+        <td><a href="#">TBA</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Jacob</td>
+        <td>Pitty</td>
+        <td>pitty@bike.com</td>
+        <td><a href="#">TBA</a></td>
+      </tr>
+    </tbody>
+  </table>   
+</div>
+
+</body>
+</html>
