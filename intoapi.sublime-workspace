@@ -3,10 +3,66 @@
 	{
 		"selected_items":
 		[
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"font-",
+				"font-weight"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "html_template/index.html",
+			"settings":
+			{
+				"buffer_size": 2894,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html_template/guests.html",
+			"settings":
+			{
+				"buffer_size": 4084,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html_template/guest_products.html",
+			"settings":
+			{
+				"buffer_size": 2299,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html_template/event_products.html",
+			"settings":
+			{
+				"buffer_size": 1953,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html_template/single_event.html",
+			"settings":
+			{
+				"buffer_size": 2913,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html_template/css/main.css",
+			"settings":
+			{
+				"buffer_size": 1080,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -38,14 +94,24 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/roshine/Projects/intoapi",
+		"/Users/roshine/Projects/intoapi/html_template",
+		"/Users/roshine/Projects/intoapi/html_template/css"
+	],
 	"file_history":
 	[
+		"/Users/roshine/Projects/intoapi/intoapi.sublime-project",
+		"/Users/roshine/Projects/intoapi/html_template/event_products.html",
+		"/Users/roshine/Projects/intoapi/html_template/single_event.html",
+		"/Users/roshine/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/Headers/clapack.h",
 		"/Library/Spelling/sk_SK.dic"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -59,6 +125,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"0"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -76,8 +143,185 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "html_template/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1181,
+								1181
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 159.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "html_template/guests.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4011,
+								4011
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 352.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "html_template/guest_products.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1395,
+								1395
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 123.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "html_template/event_products.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1953,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								967,
+								967
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "html_template/single_event.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2913,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1323,
+								1323
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 63.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "html_template/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1080,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -87,7 +331,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -116,6 +360,10 @@
 	{
 		"height": 0.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 25.0
+	},
 	"pinned_build_system": "",
 	"project": "intoapi.sublime-project",
 	"replace":
@@ -129,6 +377,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"html_template/css/main.css"
+			]
 		],
 		"width": 0.0
 	},
@@ -155,10 +407,10 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 192.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
