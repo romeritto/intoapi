@@ -30,14 +30,14 @@ class EventProduct(models.Model):
   price = models.DecimalField(max_digits=6, decimal_places=2)
 
   def __str__(self):
-    return self.name
+    return self.name + ' - ' + self.event.name 
 
 class Guest(models.Model):
   event = models.ForeignKey(Event, on_delete=models.CASCADE)
   user = models.ForeignKey(User)
 
   def __str__(self):
-    return self.user.username
+    return self.user.username + ' - ' + self.event.name 
 
 class Product(models.Model):
   guest = models.ForeignKey(Guest, on_delete=models.CASCADE)

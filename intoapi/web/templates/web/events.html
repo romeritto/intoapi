@@ -1,0 +1,51 @@
+{% extends 'web/base.html' %}
+{% load breadcrumbs %}
+
+{% block title %}Your Events{% endblock %}
+
+{% block bread %}
+  {% breadcrumb 'Your Events' %}
+{% endblock %}
+
+{% block jumbo %}
+  <h1>Events info</h1>
+  <p>All the data you need. Here, under one roof.</p>   
+{% endblock %}
+
+{% block content %}
+
+{% if event_list %}
+  <h2>Your events</h2>
+  <p>For more information click on the name of the event</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>End time</th>
+        <th>Status</th>
+        <th>Event Products</th>
+        <th>Guests</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for event in event_list %}
+        <tr>
+          <td>{{ forloop.counter }}</td>
+          <td><a href="{% url 'single_event' event_id=event.id %}">{{ event.name }}</a></td>
+          <td>{{ event.location }}</td>
+          <td>{{ event.end_time|date:"d M Y" }}</td>
+          <td>{{ event.get_status_display }}</td>
+          <td><a href="{% url 'event_products' event_id=event.id %}">See Event Products</a></td>
+          <td><a href="{% url 'guests' event_id=event.id %}">See Guests</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>   
+
+{% else %}
+  <p>You currently do not have any events.</p>
+{% endif %}
+
+{% endblock %}

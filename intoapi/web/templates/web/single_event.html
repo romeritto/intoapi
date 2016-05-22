@@ -1,0 +1,74 @@
+{% extends 'web/base.html' %}
+{% load breadcrumbs %}
+
+{% block bread %}
+  {% breadcrumb_url 'Your Events' 'events' %} 
+  {% breadcrumb event.name %}
+{% endblock %}
+
+{% block title %}{{ event.name }}{% endblock %}
+
+{% block jumbo %}   
+  
+  <h1>{{ event.name }}</h1>
+  <p>In-depth info about your occasion</p> 
+{% endblock %}     
+
+{% block content %}
+<h2>{{ event.name }}</h2>
+  <p>...</p>            
+  <table class="table vertical-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td>{{ event.name }}</td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td>{{ event.get_status_display }}</td>
+      </tr>
+      <tr>
+        <td>Start time</td>
+        <td>{{ event.start_time|date:"d M Y H:i"}}</td>
+      </tr>
+      <tr>
+        <td>End time</td>
+        <td>{{ event.end_time|date:"d M Y H:i"}}</td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>{{ event.location }}</td>
+      </tr>
+      <tr>
+        <td>Facebook share img url</td>
+        <td><a href="{{ event.facebook_share_img_url }}">{{ event.facebook_share_img_url }}</a></td>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td>{{ event.description }}</td>
+      </tr>
+      <tr>
+        <td>Ticketshop url</td>
+        <td><a href="{{ event.tickectshop_url }}">{{ event.ticketshop_url }}</a></td>
+      </tr>
+      <tr>
+        <td>Sold out</td>
+        <td>{% if event.sold_out == True %}Yes{% else %}No{% endif %}</td>
+      </tr>
+      <tr>
+        <td>Event products</td>
+        <td><a href="{% url 'event_products' event_id=event.id %}">Show products</a></td>
+      </tr>
+      <tr>
+        <td>Guests</td>
+        <td><a href="{% url 'guests' event_id=event.id %}">Show guests</a></td>
+      </tr>
+    </tbody>
+  </table>   
+{% endblock %}

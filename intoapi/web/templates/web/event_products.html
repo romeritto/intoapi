@@ -1,0 +1,38 @@
+{% extends 'web/base.html' %}
+{% load breadcrumbs %}
+
+{% block title %}Event Products{% endblock %}
+
+{% block bread %}
+  {% breadcrumb_url 'Your Events' 'events' %} 
+  {% breadcrumb_url event.name 'single_event' event_id=event.id %} 
+  {% breadcrumb_url 'Event Products' %}
+{% endblock %}
+
+{% block jumbo %}
+  <h1>Event Products</h1>
+  <p>List of all tickets for the event</p>  
+{% endblock %}
+
+{% block content %}
+<h2>{{  event.name }} Event Products</h2>
+  <p>...</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Price</th>       
+      </tr>
+    </thead>
+    <tbody>
+      {% for prod in e_products %}
+        <tr>
+          <td>{{ forloop.counter }}</td>
+          <td>{{ prod.name }}</td>
+          <td>{{ prod.price }}€</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>   
+{% endblock %}
