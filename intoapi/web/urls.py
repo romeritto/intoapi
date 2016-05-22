@@ -5,7 +5,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    # I this thing isn't good, will create my own login/logout view soon 
+    
     url(r'^login/$', auth.login, name='login', kwargs={'template_name': 'web/login.html'} ),
     url(r'^logout/$', auth.logout, name='logout', kwargs={'next_page': '/login/'} ),
     
