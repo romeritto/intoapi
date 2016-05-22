@@ -16,10 +16,14 @@ table.vertical-table > tbody > tr > td:first-child {
 }
 
 
-.form-signin {
+.form-wrap {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
+}
+
+.form-error {
+  color : red;
 }
 
 .form-signin .form-control {

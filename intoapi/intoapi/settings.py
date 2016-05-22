@@ -87,6 +87,7 @@ DATABASES = {
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
 LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/events/'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
